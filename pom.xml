@@ -22,9 +22,9 @@
 	</organization>
 
 	<scm>
-		<connection>scm:svn:https://svn.openmrs.org/openmrs-modules/releasetestmodule/trunk/</connection>
-		<developerConnection>scm:svn:https://svn.openmrs.org/openmrs-modules/releasetestmodule/trunk/</developerConnection>
-		<url>https://svn.openmrs.org/openmrs-modules/releasetestmodule/trunk/</url>
+		<connection>scm:git:https://github.com/cintiadr/Release-Test-Module</connection>
+		<developerConnection>scm:git:https://github.com/cintiadr/Release-Test-Module</developerConnection>
+		<url>https://github.com/cintiadr/Release-Test-Module</url>
 	</scm>
 
 	<modules>
@@ -124,6 +124,19 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>openmrs-repo-releases</id>
+			<name>OpenMRS Nexus Releases</name>
+			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>openmrs-repo-snapshots</id>
+			<name>OpenMRS Nexus Snapshots</name>
+			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<repositories>
 		<repository>
