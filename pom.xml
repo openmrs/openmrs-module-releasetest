@@ -121,6 +121,21 @@
 					<artifactId>maven-dependency-plugin</artifactId>
 					<version>2.4</version>
 				</plugin>
+                <plugin>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>2.4.2</version>
+                </plugin>
+                <plugin>
+		            <groupId>com.atlassian.maven.plugins</groupId>
+		            <artifactId>maven-jgitflow-plugin</artifactId>
+		            <version>1.0-alpha27</version>
+		            <configuration>
+		               <flowInitContext>
+				         <masterBranchName>master</masterBranchName>
+				         <developBranchName>master</developBranchName>
+				       </flowInitContext>
+		            </configuration>
+		        </plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
