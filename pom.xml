@@ -21,8 +21,8 @@
 	</organization>
 
 	<scm>
-		<connection>scm:git:ssh://git@github.com:openmrs/openmrs-module-releasetest.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com:openmrs/openmrs-module-releasetest.git</developerConnection>
+		<connection>scm:git:git@github.com:openmrs/openmrs-module-releasetest.git</connection>
+		<developerConnection>scm:git:git@github.com:openmrs/openmrs-module-releasetest.git</developerConnection>
 		<url>https://github.com/openmrs/openmrs-module-releasetest</url>
     </scm>
 
