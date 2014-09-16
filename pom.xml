@@ -3,7 +3,7 @@
 
 	<groupId>org.openmrs.module</groupId>
 	<artifactId>releasetestmodule</artifactId>
-	<version>1.7.90-SNAPSHOT</version>
+	<version>1.8.12-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Release test module Module</name>
 	<description>Helps to start writing OpenMRS modules</description>
