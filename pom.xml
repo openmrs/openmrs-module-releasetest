@@ -84,7 +84,6 @@
                     <version>2.4.2</version>
                     <configuration>
                     	<allowTimestampedSnapshots>true</allowTimestampedSnapshots>
-                    	<commitByProject>true</commitByProject>
                     </configuration>
                 </plugin>
 			</plugins>
