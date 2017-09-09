@@ -3,7 +3,7 @@
 
 	<groupId>org.openmrs.module</groupId>
 	<artifactId>releasetestmodule</artifactId>
-	<version>1.14.0-SNAPSHOT</version>
+	<version>1.14.0</version>
 	<packaging>pom</packaging>
 	<name>Release test module Module</name>
 	<description>Helps to start writing OpenMRS modules</description>
@@ -18,7 +18,7 @@
 		<connection>scm:git:git@github.com:openmrs/openmrs-module-releasetest.git</connection>
 		<developerConnection>scm:git:git@github.com:openmrs/openmrs-module-releasetest.git</developerConnection>
 		<url>https://github.com/openmrs/openmrs-module-releasetest</url>
-    <tag>HEAD</tag>
+    <tag>releasetestmodule-1.14.0</tag>
   </scm>
 
 	<modules>
