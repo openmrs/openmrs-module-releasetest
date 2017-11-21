@@ -94,12 +94,12 @@
 		<repository>
 			<id>openmrs-repo-modules</id>
 			<name>OpenMRS Nexus Modules</name>
-			<url>http://mavenrepo-new.openmrs.org/nexus/content/repositories/modules</url>
+			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/modules</url>
 		</repository>
 		<snapshotRepository>
 			<id>openmrs-repo-snapshots</id>
 			<name>OpenMRS Nexus Snapshots</name>
-			<url>http://mavenrepo-new.openmrs.org/nexus/content/repositories/snapshots</url>
+			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -107,7 +107,7 @@
 		<repository>
 			<id>openmrs-repo</id>
 			<name>OpenMRS Nexus Repository</name>
-			<url>https://mavenrepo-new.openmrs.org/nexus/content/repositories/public</url>
+			<url>https://mavenrepo.openmrs.org/nexus/content/repositories/public</url>
 		</repository>
 	</repositories>
 
@@ -115,7 +115,7 @@
 		<pluginRepository>
 			<id>openmrs-repo</id>
 			<name>OpenMRS Nexus Repository</name>
-			<url>https://mavenrepo-new.openmrs.org/nexus/content/repositories/public</url>
+			<url>https://mavenrepo.openmrs.org/nexus/content/repositories/public</url>
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
