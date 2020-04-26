@@ -99,7 +99,7 @@
 		<snapshotRepository>
 			<id>openmrs-repo-snapshots</id>
 			<name>OpenMRS Nexus Snapshots</name>
-			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/snapshots</url>
+			<url>https://openmrs.jfrog.io/artifactory/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
