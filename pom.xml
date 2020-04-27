@@ -99,7 +99,7 @@
 		<snapshotRepository>
 			<id>openmrs-repo-snapshots</id>
 			<name>OpenMRS Nexus Snapshots</name>
-			<url>https://mavenrepo.openmrs.org/proxy/snapshots</url>
+			<url>https://mavenrepo.openmrs.org/tempredirect/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
