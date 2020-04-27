@@ -94,12 +94,12 @@
 		<repository>
 			<id>openmrs-repo-modules</id>
 			<name>OpenMRS Nexus Modules</name>
-			<url>https://mavenrepo.openmrs.org/nexus/content/repositories/modules</url>
+			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/modules</url>
 		</repository>
 		<snapshotRepository>
 			<id>openmrs-repo-snapshots</id>
 			<name>OpenMRS Nexus Snapshots</name>
-			<url>https://mavenrepo.openmrs.org/tempredirect/snapshots</url>
+			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
