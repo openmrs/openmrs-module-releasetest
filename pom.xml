@@ -28,33 +28,62 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<distro.groupId>org.openmrs.distro</distro.groupId>
-		<distro.artifactId>referenceapplication</distro.artifactId>
-		<distro.version>LATEST</distro.version>
-	</properties>
+		<openmrsPlatformVersion>2.1.4</openmrsPlatformVersion>
+  </properties>
 
 	<dependencyManagement>
 		<dependencies>
 
-			<!--
-			Libraries to add as dependencies with compile or runtime scope:
-			Find matching dependencies in the maven central repository.
 			<dependency>
-				<groupId>org.other.library</groupId>
-				<artifactId>library-name</artifactId>
-				<version>library.version</version>
-				<scope>compile</scope>
-			</dependency>
-			-->
-
-			<!-- Importing versions from refapp distro -->
-			<dependency>
-				<groupId>${distro.groupId}</groupId>
-				<artifactId>${distro.artifactId}</artifactId>
-				<version>${distro.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
+							<groupId>org.openmrs.api</groupId>
+							<artifactId>openmrs-api</artifactId>
+							<version>${openmrsPlatformVersion}</version>
+							<type>jar</type>
+							<scope>provided</scope>
+						</dependency>
+						<dependency>
+							<groupId>org.openmrs.api</groupId>
+							<artifactId>openmrs-api</artifactId>
+							<version>${openmrsPlatformVersion}</version>
+							<type>test-jar</type>
+							<scope>test</scope>
+						</dependency>
+						<dependency>
+							<groupId>org.openmrs.web</groupId>
+							<artifactId>openmrs-web</artifactId>
+							<version>${openmrsPlatformVersion}</version>
+							<scope>provided</scope>
+							<exclusions>
+								<exclusion>
+									<groupId>javax.servlet</groupId>
+									<artifactId>jstl</artifactId>
+								</exclusion>
+								<exclusion>
+									<groupId>javax.servlet</groupId>
+									<artifactId>jsp-api</artifactId>
+								</exclusion>
+							</exclusions>
+						</dependency>
+						<dependency>
+							<groupId>javax.servlet</groupId>
+							<artifactId>javax.servlet-api</artifactId>
+							<version>3.1.0</version>
+							<scope>provided</scope>
+						</dependency>
+						<dependency>
+							<groupId>org.openmrs.web</groupId>
+							<artifactId>openmrs-web</artifactId>
+							<version>${openmrsPlatformVersion}</version>
+							<type>test-jar</type>
+							<scope>test</scope>
+						</dependency>
+						<dependency>
+							<groupId>org.openmrs.test</groupId>
+							<artifactId>openmrs-test</artifactId>
+							<version>${openmrsPlatformVersion}</version>
+							<type>pom</type>
+							<scope>test</scope>
+						</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -65,8 +94,8 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
 					<configuration>
-						<target>1.6</target>
-						<source>1.6</source>
+						<target>1.8</target>
+						<source>1.8</source>
 					</configuration>
 				</plugin>
 				<plugin>
@@ -93,13 +122,13 @@
 	<distributionManagement>
 		<repository>
 			<id>openmrs-repo-modules</id>
-			<name>OpenMRS Nexus Modules</name>
-			<url>https://mavenrepo.openmrs.org/modules</url>
+			<name>OpenMRS Modules</name>
+			<url>https://mavenrepo.openmrs.org/nexus/content/repositories/modules</url>
 		</repository>
 		<snapshotRepository>
 			<id>openmrs-repo-snapshots</id>
-			<name>OpenMRS Nexus Snapshots</name>
-			<url>https://mavenrepo.openmrs.org/snapshots</url>
+			<name>OpenMRS Snapshots</name>
+			<url>https://mavenrepo.openmrs.org/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
