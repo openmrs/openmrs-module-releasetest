@@ -123,12 +123,12 @@
 		<repository>
 			<id>openmrs-repo-modules</id>
 			<name>OpenMRS Modules</name>
-			<url>https://mavenrepo.openmrs.org/modules</url>
+			<url>https://mavenrepo.openmrs.org/artifactory/modules</url>
 		</repository>
 		<snapshotRepository>
 			<id>openmrs-repo-snapshots</id>
 			<name>OpenMRS Snapshots</name>
-			<url>https://mavenrepo.openmrs.org/snapshots</url>
+			<url>https://mavenrepo.openmrs.org/artifactory/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
