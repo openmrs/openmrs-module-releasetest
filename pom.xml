@@ -4,7 +4,7 @@
 
 	<groupId>org.openmrs.module</groupId>
 	<artifactId>releasetestmodule</artifactId>
-	<version>2.1.24-SNAPSHOT</version>
+	<version>2.1.24</version>
 	<packaging>pom</packaging>
 	<name>Release test module Module</name>
 	<description>Helps to start writing OpenMRS modules</description>
@@ -19,7 +19,7 @@
 		<connection>scm:git:git@github.com:openmrs/openmrs-module-releasetest.git</connection>
 		<developerConnection>scm:git:git@github.com:openmrs/openmrs-module-releasetest.git</developerConnection>
 		<url>https://github.com/openmrs/openmrs-module-releasetest</url>
-    <tag>HEAD</tag>
+    <tag>releasetestmodule-2.1.24</tag>
   </scm>
 
 	<modules>
